@@ -4,7 +4,7 @@
  * @return {number[]}
  */
 var shuffle = function(nums, n) {
-    const items = new Array(nums.length);
+    let items = new Array(nums.length);
     let index = 0 ;
     for(let i = 0; i < n; i++){
         items[index++] = nums[i];
