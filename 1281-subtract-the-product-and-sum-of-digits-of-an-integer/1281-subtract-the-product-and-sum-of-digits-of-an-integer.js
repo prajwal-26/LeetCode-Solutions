@@ -3,16 +3,14 @@
  * @return {number}
  */
 var subtractProductAndSum = function(n) {
-    const numbertostring = n.toString();
-    
     let product = 1;
     let sum = 0;
     
-    for(let i = 0 ; i < numbertostring.length; i++){
-        const digit = parseInt(numbertostring[i])
-        product *= digit
-        sum += digit
-        
+    while (n > 0) {
+        const digit = n % 10;
+        product *= digit;
+        sum += digit;
+        n = Math.floor(n / 10);
     }
     
     return product - sum;
