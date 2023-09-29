@@ -18,6 +18,3 @@ var subtractProductAndSum = function(n) {
     return result;
 };
 
-const n = 1234;
-const difference = subtractProductAndSum(n);
-console.log(difference);
