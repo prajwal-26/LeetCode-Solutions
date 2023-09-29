@@ -14,7 +14,7 @@ var subtractProductAndSum = function(n) {
         sum += digit
         
     }
-    const result = product - sum;
-    return result;
+    
+    return product - sum;
 };
 
