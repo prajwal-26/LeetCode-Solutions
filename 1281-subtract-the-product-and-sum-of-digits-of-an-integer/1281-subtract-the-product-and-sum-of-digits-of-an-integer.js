@@ -9,9 +9,9 @@ var subtractProductAndSum = function(n) {
     let sum = 0;
     
     for(let i = 0 ; i < numbertostring.length; i++){
-        
-        product *= parseInt(numbertostring[i]);
-        sum += parseInt(numbertostring[i]);
+        const digit = parseInt(numbertostring[i])
+        product *= digit
+        sum += digit
         
     }
     const result = product - sum;
