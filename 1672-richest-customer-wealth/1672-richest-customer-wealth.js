@@ -9,7 +9,9 @@ var maximumWealth = function(accounts) {
             for(let j = 0 ; j < accounts[i].length ; j++){
                 currentwealth += accounts[i][j];
             }
-            maxwealth = Math.max(maxwealth,currentwealth);
+           if(currentwealth > maxwealth){
+               maxwealth = currentwealth;
+           }
         }
     return maxwealth;
 };
